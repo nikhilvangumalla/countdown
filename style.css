@@ -1,0 +1,54 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	background-image: url("./image.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: "Lato", sans-serif;
+	color: white;
+}
+
+.heading {
+	margin: 50px auto;
+	font-size: 5rem;
+}
+
+.countdown-container {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 10vw;
+}
+
+.countdown-element {
+	font-size: 6rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.countdown-element > span {
+	font-size: 1rem;
+}
+
+.countdown-done {
+	font-size: 7rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100vw;
+}
+
+@media only screen and (max-width: 601px) {
+	.heading {
+		margin: 30px auto;
+		font-size: 3rem;
+	}
+	.countdown-container {
+		flex-direction: column;
+	}
+}
